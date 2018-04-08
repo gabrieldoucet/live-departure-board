@@ -33,6 +33,26 @@ var getTrainDestinationName = function (train) {
   return locationName;
 };
 
+var getTrainCallingPoints = function (train) {
+  var subsequentCallingPoints = get(train, ['lt7:subsequentCallingPoints']);
+  var callingPointList = get(subsequentCallingPoints, ['lt7:callingPointList']);
+  var callingPoints = get(callingPointList, ['lt7:callingPoint']);
+
+
+  var newCallingPoints = _.map(callingPoints, changeCallingPointKeys);
+  return newCallingPoints;
+};
+
+var changeCallingPointKeys = function (callingPoint) {
+  var newCallingPoint = {};
+  _.forEach(_.keys(callingPoint), function (oldKey) {
+    var newKey = convertKey(oldKey);
+    var value = get(callingPoint, oldKey);
+    _.set(newCallingPoint, newKey, value);
+  });
+  return newCallingPoint;
+};
+
 var changeTrainKeys = function (train) {
   var newTrainObj = {};
   _.forEach(_.keys(train), function (oldKey) {
@@ -45,21 +65,35 @@ var changeTrainKeys = function (train) {
 
 var decorateTrain = function (train) {
   var trainDestinationName = getTrainDestinationName(train);
+  var callingPoints = getTrainCallingPoints(train);
+
   var newTrain = changeTrainKeys(train);
   newTrain = _.pick(newTrain, ['std', 'etd', 'platform']);
+
   _.set(newTrain, 'destination', trainDestinationName);
+  _.set(newTrain, 'callingPoints', callingPoints);
+
+  if (_.isEqual(_.findIndex(callingPoints, {'crs': 'GLC'}), -1)) {
+    _.set(newTrain, 'via', 'GLQ');
+  } else {
+    _.set(newTrain, 'via', 'GLC');
+  };
   return newTrain;
 };
 
 var trainsToJS = function (trains) {
   var newTrains = _.map(trains, decorateTrain);
-  return newTrains;
+  // HYN specific
+  var plat1Trains = _.filter(newTrains, function (train) {
+    return (_.get(train, 'platform') == 1);
+  });
+  return plat1Trains;
 };
 
 var getDeparturesFromXML = function (xml, callback) {
   xml2js.parseString(xml, function (err, result) {
     var body = get(result, ['soap:Envelope', 'soap:Body']);
-    var departureBoardResponse = get(body, ['GetDepartureBoardResponse']);
+    var departureBoardResponse = get(body, ['GetDepBoardWithDetailsResponse']);
     var stationBoardResult = get(departureBoardResponse, ['GetStationBoardResult']);
     var trainServices = get(stationBoardResult, ['lt7:trainServices']);
     trains = get(trainServices, ['lt7:service']);
@@ -77,12 +111,12 @@ var getDepartureBoard = function (crs, callback) {
       </typ:AccessToken>
    </soap:Header>
    <soap:Body>
-      <ldb:GetDepartureBoardRequest>
+      <ldb:GetDepBoardWithDetailsRequest>
          <ldb:numRows>${ROWS}</ldb:numRows>
          <ldb:crs>${crs}</ldb:crs>
          <ldb:timeOffset>0</ldb:timeOffset>
          <ldb:timeWindow>${TIME_WINDOW}</ldb:timeWindow>
-      </ldb:GetDepartureBoardRequest>
+      </ldb:GetDepBoardWithDetailsRequest>
    </soap:Body>
 </soap:Envelope>`
 
@@ -93,7 +127,7 @@ var getDepartureBoard = function (crs, callback) {
     data: postData,
     headers: {
       'Content-Type': 'text/xml',
-      'SOAPAction': 'http://thalesgroup.com/RTTI/2012-01-13/ldb/GetDepartureBoard',
+      'SOAPAction': 'http://thalesgroup.com/RTTI/2015-05-14/ldb/GetDepBoardWithDetails',
       'Content-Length': Buffer.byteLength(postData)
     }
   };

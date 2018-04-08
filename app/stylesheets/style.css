@@ -26,7 +26,7 @@
         .train {
             font-family: led;
             color: yellow;
-            font-size: 25pt;
+            font-size: 35pt;
             wrap: nowrap;
             border-bottom: 1px dotted darkgrey;
         }
