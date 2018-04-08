@@ -7,7 +7,7 @@ Create a .env file at the root with 3 environment variables:
 - `API_TOKEN` token provided by National Rail Enquiries
 - `PORT` for the application
 
-For display options, edit `config.json` with `rows` and `csr` attribute
+For display options, edit `config.json` with `rows`, `csr` and 'timeWindow' attributes
 
 ## Launching
 - `npm install` to download the dependencies

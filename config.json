@@ -1,4 +1,5 @@
 {
-  "csr": "HYN",
-  "rows": 15
+  "crs": "HYN",
+  "rows": 15,
+  "timeWindow": 120
 }

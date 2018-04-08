@@ -2,13 +2,15 @@ require('dotenv').config();
 const _          = require('lodash');
 const axios      = require('axios');
 const xml2js     = require('xml2js');
+const path       = require('path');
 
 const API_TOKEN = process.env.API_TOKEN;
 
-const config = require('config.js');
+const config = require(path.join(__dirname, 'config'));
 
 const ROWS = _.get(config, 'rows');
-const CSR = _.get(config, 'csr');
+const CRS = _.get(config, 'crs');
+const TIME_WINDOW = _.get(config, 'timeWindow');
 
 var convertKey = function (key) {
   var keyRe = /lt[0-9]:([a-z]*)/;
@@ -79,7 +81,7 @@ var getDepartureBoard = function (crs, callback) {
          <ldb:numRows>${ROWS}</ldb:numRows>
          <ldb:crs>${crs}</ldb:crs>
          <ldb:timeOffset>0</ldb:timeOffset>
-         <ldb:timeWindow>60</ldb:timeWindow>
+         <ldb:timeWindow>${TIME_WINDOW}</ldb:timeWindow>
       </ldb:GetDepartureBoardRequest>
    </soap:Body>
 </soap:Envelope>`
