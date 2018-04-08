@@ -1,0 +1,23 @@
+{
+  "description": "Live departure board for UK train stations",
+  "license": "ISC",
+  "private": true,
+  "repository": "https://github.com/gdoucet-fr/live-departure-board",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "./node_modules/.bin/nodemon app.js",
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "body-parser": "^1.18.2",
+    "cors": "^2.8.4",
+    "dotenv": "^5.0.1",
+    "express": "^4.16.3",
+    "lodash": "^4.17.5",
+    "xml2js": "^0.4.19"
+  },
+  "devDependencies": {
+    "nodemon": "^1.17.3"
+  }
+}

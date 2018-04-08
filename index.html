@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="liveDepartureBoard">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="Gabriel Doucet">
+
+  <title>Live Departure Board</title>
+</head>
+<body>
+
+  <script src='https://code.jquery.com/jquery-3.1.1.slim.min.js'
+          integrity='sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n'
+          crossorigin='anonymous'></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+        integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+
+  <script src="app.js"></script>
+
+  <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootswatch/4.0.0/darkly/bootstrap.min.css'>
+  <link href="stylesheets/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body ng-controller="mainController">
+
+<div class="row">
+  <div class="col-md-3">
+    <h1>Departures</h1>
+    <p>Last update {{ lastUpdate }}</p>
+  </div>
+
+  <div class="col-md-3 clock">
+    {{ crs }}
+  </div>
+  <div class="col-md-3 clock">
+    {{ clock }}
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-4">
+    <h2>Destination</h2>
+  </div>
+  <div class="col-md-2">
+    <h2>Plat</h2>
+  </div>
+  <div class="col-md-2">
+    <h2>Due</h2>
+  </div>
+  <div class="col-md-2">
+    <h2>Expt</h2>
+  </div>
+</div>
+
+<div class="row" ng-repeat="train in trains">
+  <div class="col-md-4 train">
+      {{ train.destination }}
+  </div>
+  <div class="col-md-2 train">
+      {{ train.platform }}
+  </div>
+  <div class="col-md-2 train">
+      {{ train.std }}
+  </div>
+  <div class="col-md-2 train">
+      {{ train.etd }}
+  </div>
+</div>
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<!-- <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script> -->
+</body>
+</html>

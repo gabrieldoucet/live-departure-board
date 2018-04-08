@@ -1,6 +1,10 @@
+.git
 node_modules
 npm-debug.log
+.npmrc
 .idea
 *~
 .DS_Store
 .env
+.package-lock.json
+._*
