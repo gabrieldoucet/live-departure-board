@@ -4,7 +4,11 @@ const axios      = require('axios');
 const xml2js     = require('xml2js');
 
 const API_TOKEN = process.env.API_TOKEN;
-const CRS = process.env.CRS;
+
+const config = require('config.js');
+
+const ROWS = _.get(config, 'rows');
+const CSR = _.get(config, 'csr');
 
 var convertKey = function (key) {
   var keyRe = /lt[0-9]:([a-z]*)/;
@@ -72,7 +76,7 @@ var getDepartureBoard = function (crs, callback) {
    </soap:Header>
    <soap:Body>
       <ldb:GetDepartureBoardRequest>
-         <ldb:numRows>10</ldb:numRows>
+         <ldb:numRows>${ROWS}</ldb:numRows>
          <ldb:crs>${crs}</ldb:crs>
          <ldb:timeOffset>0</ldb:timeOffset>
          <ldb:timeWindow>60</ldb:timeWindow>
