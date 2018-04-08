@@ -74,9 +74,9 @@ var decorateTrain = function (train) {
   _.set(newTrain, 'callingPoints', callingPoints);
 
   if (_.isEqual(_.findIndex(callingPoints, {'crs': 'GLC'}), -1)) {
-    _.set(newTrain, 'via', 'GLQ');
+    _.set(newTrain, 'via', 'Queen Street');
   } else {
-    _.set(newTrain, 'via', 'GLC');
+    _.set(newTrain, 'via', 'Central');
   };
   return newTrain;
 };
