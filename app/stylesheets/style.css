@@ -1,40 +1,46 @@
-      @font-face {
-            font-family: led;
-      src: url('../fonts/signus_led-s-webfont.woff2') format('woff2'),
-         url('../fonts/signus_led-s-webfont.woff') format('woff');
-      font-weight: normal;
-      font-style: normal;
-        }
+@font-face {
+    font-family: led;
+    src: url('../fonts/signus_led-s-webfont.woff2') format('woff2'),
+        url('../fonts/signus_led-s-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 
-        body {
-          padding: 30px;
-        }
+body {
+  padding: 30px;
+}
 
-        .container-fluid {
-            max-width:1200px;
-        }
+.container-fluid {
+    max-width:1200px;
+}
 
-        h1 {
-            font-weight: bold;
-            font-size: 4em;
-        }
+h1 {
+    font-weight: bold;
+    font-size: 4em;
+}
 
-        h2 {
-            font-weight: bold;
-        }
+h2 {
+    font-weight: bold;
+}
 
-        .train {
-            font-family: led;
-            color: yellow;
-            font-size: 35pt;
-            wrap: nowrap;
-            border-bottom: 1px dotted darkgrey;
-        }
-        .clock {
-            font-family: led;
-            color: yellow;
-            font-size: 44pt;
-            padding-right: 20px;
-            text-align: right;
-            wrap: nowrap;
-        }
+.train {
+    font-family: led;
+    color: yellow;
+    font-size: 35pt;
+    wrap: nowrap;
+}
+.clock {
+    font-family: led;
+    color: yellow;
+    font-size: 44pt;
+    padding-right: 20px;
+    text-align: right;
+    wrap: nowrap;
+}
+
+.vsep {
+    display: block; 
+    border-width: 0px 0px 1px 0px;
+    border-bottom-style: dotted;
+    border-bottom-color: darkgrey; 
+}       
