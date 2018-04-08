@@ -9,6 +9,6 @@ Create a .env file at the root with 3 environment variables:
 - `PORT` for the application
 
 ## Launching
-- `npm install` to download the dependencies.
-- `npm run start` to launch the app.
+- `npm install` to download the dependencies
+- `npm run start` to launch the app
 - Visit localhost:PORT
