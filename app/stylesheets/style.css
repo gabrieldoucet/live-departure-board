@@ -1,9 +1,9 @@
 @font-face {
-    font-family: led;
-    src: url('../fonts/signus_led-s-webfont.woff2') format('woff2'),
-        url('../fonts/signus_led-s-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+  font-family: led;
+  src: url('../fonts/signus_led-s-webfont.woff2') format('woff2'),
+    url('../fonts/signus_led-s-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
 
 body {
@@ -11,36 +11,39 @@ body {
 }
 
 .container-fluid {
-    max-width:1200px;
+  max-width: 1200px;
 }
 
 h1 {
-    font-weight: bold;
-    font-size: 4em;
+  font-weight: bold;
+  font-size: 4em;
 }
 
 h2 {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .train {
-    font-family: led;
-    color: yellow;
-    font-size: 35pt;
-    wrap: nowrap;
-}
-.clock {
-    font-family: led;
-    color: yellow;
-    font-size: 44pt;
-    padding-right: 20px;
-    text-align: right;
-    wrap: nowrap;
+  font-family: led;
+  color: yellow;
+  font-size: 35pt;
+  wrap: nowrap;
 }
 
-.vsep {
-    display: block; 
-    border-width: 0px 0px 1px 0px;
-    border-bottom-style: dotted;
-    border-bottom-color: darkgrey; 
-}       
+.train-container {
+  border-width: 0px 0px 1px 0px;
+  border-bottom-style: dotted;
+  border-bottom-color: darkgrey;
+  padding-bottom: 10px;
+}
+
+.clock {
+  font-family: led;
+  color: yellow;
+  font-size: 44pt;
+  wrap: nowrap;
+}
+
+.popeye-modal {
+  background: #343434 !important;
+}

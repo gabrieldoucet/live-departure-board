@@ -1,0 +1,50 @@
+<form>
+  <div class="row">
+    <div class="form-group col-12">
+      <label for="inputCrs">Station code</label>
+      <station-select station-code="vm.newSettings.crs"></station-select>
+      <small id="crsHelp" class="form-text text-muted">The number of services to return in the resulting station board.</small>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="form-group col-12">
+      <label for="timeWindowInput">Origin/Destination filter</label>
+      <div class="row col-12">
+        <select class="custom-select col-3" ng-options="option as option for option in vm.settings.filterType.options" ng-model="vm.newSettings.filterType">
+          <option value="">Select filter</option>
+        </select>
+        <station-select class="col-9" station-code="vm.newSettings.filterCrs"></station-select>
+      </div>
+      <small id="originDestFilterHelp" class="form-text text-muted">The station code of either an origin or destination location to filter in and the station code.</small>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="form-group col-4">
+      <label for="numberRowsInput">Number of rows</label>
+      <input type="number" class="form-control" id="numbeRowsInput" ng-model="vm.newSettings.nbRows" min="{{vm.settings.nbRows.min}}" max="{{vm.settings.nbRows.max}}">
+      <small id="numberRowsHelp" class="form-text text-muted">The number of services to return in the resulting station board. Between {{vm.settings.nbRows.min}} and {{vm.settings.nbRows.max}}.</small>
+      <small class="form-text text-muted"></small>
+    </div>
+
+    <div class="form-group col-4">
+      <label for="timeOffsetInput">Time offset </label>
+      <input type="number" class="form-control" id="timeOffsetInput" ng-model="vm.newSettings.timeOffset" min="{{vm.settings.timeOffset.min}}" max="{{vm.settings.timeOffset.max}}">
+      <small id="timeOffsetHelp" class="form-text text-muted">An offset in minutes against the current time to provide the station board for. Between {{vm.settings.timeOffset.min}} and {{vm.settings.timeOffset.max}} minutes.</small>
+    </div>
+    <div class="form-group col-4">
+      <label for="timeWindowInput">Time window</label>
+      <input type="number" class="form-control" id="timeWindowInput" ng-model="vm.newSettings.timeWindow" min="{{vm.settings.timeWindow.min}}" max="{{vm.settings.timeWindow.max}}">
+      <small id="timeWindowHelp" class="form-text text-muted">How far into the future in minutes, relative to the time offset, to return services for. Between {{vm.settings.timeWindow.min}} and {{vm.settings.timeWindow.max}} minutes.</small>
+    </div>
+  </div>
+
+  <div class="row col-12">
+    <div class="form-group">
+      <label for="timeOffsetInput">The current settings will query {{vm.newSettings.nbRows}} services between {{vm.display.startTime}} and {{vm.display.endTime}}</label>
+    </div>
+  </div>
+
+  <button type="button" class="btn btn-light" ng-click="vm.applySettings()">Apply</button>
+</form>

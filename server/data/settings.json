@@ -1,0 +1,33 @@
+{
+  "crs": {
+    "type": "explicit",
+    "value": "GLC"
+  },
+  "nbRows": {
+    "type": "range",
+    "value": 10,
+    "min": 1,
+    "max": 10
+  },
+  "timeOffset": {
+    "type": "range",
+    "value": 0,
+    "min": -120,
+    "max": 119
+  },
+  "timeWindow": {
+    "type": "range",
+    "value": 120,
+    "min": -119,
+    "max": 119
+  },
+  "filterType": {
+    "type": "enum",
+    "value": "to",
+    "options": ["to", "from"]
+  },
+  "filterCrs": {
+    "type": "explicit",
+    "value": null
+  }
+}

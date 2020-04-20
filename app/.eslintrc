@@ -1,0 +1,21 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true,
+    "node": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 2017
+  },
+  "rules": {
+    "quotes": ["error", "always"],
+    "semi": ["error", "always"],
+    "no-trailing-spaces": "error",
+    "no-console": "error",
+    "indent": ["error", 2, {
+      "ObjectExpression": "off",
+      "SwitchCase": 1
+    }],
+    "extends": "plugin:angular/johnpapa"
+  }
+}

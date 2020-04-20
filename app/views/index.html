@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="liveDepartureBoardApp">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="Gabriel Doucet">
+
+  <title>Live Departure Board</title>
+</head>
+
+<body>
+
+  <script src="./main.js"></script>
+  <link rel='stylesheet' href="https://stackpath.bootstrapcdn.com/bootswatch/4.0.0/darkly/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+  <link href="stylesheets/popeye.css" rel="stylesheet" type="text/css" />
+  <link href="stylesheets/style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body ng-controller="MainController as vm">
+    <div class="row">
+      <div class="col-8">
+        <p class="clock">{{vm.stationInfo.name}}</p>
+      </div>
+
+      <div class="col-3">
+        <p class="clock">{{ vm.clock }}</p>
+      </div>
+
+      <div class="col-1">
+        <h1>
+          <button type="button" class="btn btn-light" ng-click="vm.toggleSettings()">
+            <i class="fa fa-cog"></i></button>
+        </h1>
+      </div>
+    </div>
+
+    <div class="row mb-4">
+      <div class="col-12">
+        <h1 class="mb-0">Departures</h1>
+        <p class="mb-0 mr-2 d-inline align-middle">Last update {{ vm.lastUpdate }}</p>
+        <button type="button" class="btn btn-light btn-sm d-inline" ng-click="vm.toggleUpdate()"><i class="fas" ng-class="vm.controls.play ? 'fa-pause' : 'fa-play'"></i></button>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-6">
+        <h2>Destination</h2>
+      </div>
+      <div class="col-2 text-center">
+        <h2>Platform</h2>
+      </div>
+      <div class="col-2 text-center">
+        <h2>Due</h2>
+      </div>
+      <div class="col-2 text-center">
+        <h2>Expected</h2>
+      </div>
+    </div>
+
+    <div class="row train-container" ng-repeat="train in vm.trains">
+      <div class="col-6">
+        <div class="row">
+          <div class="col-12 train">
+            {{ train.destination }}
+          </div>
+          <div class="col-12">
+            <span ng-repeat="(index, dest) in train.callingPoints" class="mr-1">{{dest.locationName + (index !== train.callingPoints.length-1 ? ',' : ' ')}} </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-2 train text-center">
+        {{ train.platform }}
+      </div>
+      <div class="col-2 train text-center">
+        {{ train.std }}
+      </div>
+      <div class="col-2 train text-center">
+        {{ train.etd }}
+      </div>
+    </div>
+  </body>
+
+</html>
