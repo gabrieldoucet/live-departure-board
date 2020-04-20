@@ -17,3 +17,7 @@ Create a .env file at the root of the project with the following variables:
 
 ## Further information
 The file `server/data/settings.json` contains the default values as specified in the OpenLDBWS documentation (http://lite.realtime.nationalrail.co.uk/openldbws/) for the `GetDepBoardWithDetails` operation.
+
+## Screenshots
+![Departure board](https://github.com/gabrieldoucet/live-departure-board/tree/master/docs/main_view.png)
+![Settings window](https://github.com/gabrieldoucet/live-departure-board/tree/master/docs/settings_view.png)
