@@ -1,7 +1,7 @@
 require('dotenv').config();
 const bodyParser = require('body-parser');
 const express = require('express');
-var helmet = require('helmet');
+const helmet = require('helmet');
 const app = express();
 const path = require('path');
 
