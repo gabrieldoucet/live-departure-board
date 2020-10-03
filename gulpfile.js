@@ -7,7 +7,7 @@ const sass = require('gulp-sass');
 
 function cleanDist () {
   return gulp
-    .src(path.join(__dirname, 'dist'), { read: false })
+    .src(path.join(__dirname, 'dist'), { read: false, allowEmpty: true })
     .pipe(clean());
 }
 

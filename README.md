@@ -12,8 +12,9 @@ Create a .env file at the root of the project with the following variables:
 
 ## Launching
 1. `npm install` to download the dependencies
-2. `npm start` to launch the app
-3. Visit `localhost:PORT` to display
+2. `npm run gulp build` to build the project and the front-end app folder
+3. `npm start` to launch the app
+4. Visit `localhost:{PORT}` to launch the app
 
 ## Further information
 The file `server/data/settings.json` contains the default values as specified in the OpenLDBWS documentation (http://lite.realtime.nationalrail.co.uk/openldbws/) for the `GetDepBoardWithDetails` operation.
