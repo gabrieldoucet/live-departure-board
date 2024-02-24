@@ -5,12 +5,9 @@ const router = new express.Router();
 
 const DEFAULT_STATION_CODE = process.env.DEFAULT_STATION_CODE;
 
-const trainService = require(path.join(
-  __dirname,
-  "..",
-  "services",
-  "newTrainService"
-));
+const trainService = require(
+  path.join(__dirname, "..", "services", "trainService")
+);
 
 const mockData = require(path.join(__dirname, "..", "data", "mockData"));
 const _settings = require(path.join(__dirname, "..", "data", "settings"));

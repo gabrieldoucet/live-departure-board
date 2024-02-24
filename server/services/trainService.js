@@ -2,15 +2,12 @@ const axios = require("axios");
 const _ = require("lodash");
 const path = require("path");
 
-const settingsService = require(path.join(
-  __dirname,
-  "..",
-  "services",
-  "settingsService"
-));
+const settingsService = require(
+  path.join(__dirname, "..", "services", "settingsService")
+);
 
 const _stations = require(path.join(__dirname, "..", "data", "stations"));
-const API_TOKEN = process.env.JSON_API_TOKEN;
+const API_TOKEN = process.env.API_TOKEN;
 
 const getRequestParams = function (settings) {
   const { nbRows, timeOffset, timeWindow, filterType, filterCrs } = settings;
