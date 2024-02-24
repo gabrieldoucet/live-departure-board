@@ -8,7 +8,8 @@
     "dev": "./node_modules/.bin/nodemon ./bin/www",
     "start": "node ./bin/www",
     "lint": "./node_modules/.bin/eslint server/**/*.js",
-    "gulp": "./node_modules/.bin/gulp"
+    "gulp": "./node_modules/.bin/gulp",
+    "test": "mocha"
   },
   "dependencies": {
     "axios": "^0.18.0",
@@ -22,6 +23,7 @@
     "angular": "^1.8.0",
     "angular-popeye": "^1.0.5",
     "bootstrap": "^4.4.1",
+    "chai": "^4.3.7",
     "eslint": "^8.57.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-config-standard": "^17.1.0",
@@ -39,8 +41,10 @@
     "gulp-rename": "^2.0.0",
     "gulp-sass": "^4.0.2",
     "jquery": "^3.5.0",
+    "mocha": "^10.3.0",
     "moment": "^2.24.0",
     "nodemon": "^2.0.3",
     "prettier": "^3.2.5"
-  }
+  },
+  "type": "commonjs"
 }
