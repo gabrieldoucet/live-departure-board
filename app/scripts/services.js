@@ -1,20 +1,21 @@
-const angular = require('angular');
-const _ = require('lodash');
+const angular = require("angular");
+const _ = require("lodash");
 
-angular.module('liveDepartureBoardApp')
-  .factory('dataService', dataService)
-  .factory('settingsService', settingsService);
+angular
+  .module("liveDepartureBoardApp")
+  .factory("dataService", dataService)
+  .factory("settingsService", settingsService);
 
-dataService.$inject = ['$http', 'settingsService'];
-settingsService.$inject = ['$rootScope'];
+dataService.$inject = ["$http", "settingsService"];
+settingsService.$inject = ["$rootScope"];
 
-function dataService ($http, settingsService) {
+function dataService($http, settingsService) {
   const getDepartureBoard = function () {
     const settings = settingsService.getSettings();
     return $http({
-      method: 'POST',
-      url: '/api/departure-board',
-      data: { settings: settings }
+      method: "POST",
+      url: "/api/departure-board",
+      data: { settings: settings },
     }).then(function (res) {
       return res.data;
     });
@@ -22,8 +23,8 @@ function dataService ($http, settingsService) {
 
   const getStations = function () {
     return $http({
-      method: 'GET',
-      url: '/api/stations',
+      method: "GET",
+      url: "/api/stations",
     }).then(function (res) {
       return res.data;
     });
@@ -31,8 +32,8 @@ function dataService ($http, settingsService) {
 
   const loadSettings = function () {
     return $http({
-      method: 'GET',
-      url: '/api/settings',
+      method: "GET",
+      url: "/api/settings",
     }).then(function (res) {
       const settings = res.data;
       settingsService.load(settings);
@@ -42,20 +43,20 @@ function dataService ($http, settingsService) {
   return {
     getDepartureBoard: getDepartureBoard,
     getStations: getStations,
-    loadSettings: loadSettings
+    loadSettings: loadSettings,
   };
 }
 
-function settingsService ($rootScope) {
+function settingsService($rootScope) {
   let _settings = null;
 
-  function load (settings) {
+  function load(settings) {
     if (_.isNil(_settings)) {
       _settings = settings;
     }
   }
 
-  function getSettings (selectorOrSelectors) {
+  function getSettings(selectorOrSelectors) {
     let settings;
     if (_.isNil(selectorOrSelectors)) {
       return _settings;
@@ -63,26 +64,26 @@ function settingsService ($rootScope) {
       if (_.isArray(selectorOrSelectors)) {
         settings = _.map(_settings, selectorOrSelectors);
       } else if (_.isString(selectorOrSelectors)) {
-        settings = _.get(_settings, [selectorOrSelectors, 'value']);
+        settings = _.get(_settings, [selectorOrSelectors, "value"]);
       } else {
-        return {}
+        return {};
       }
     }
     return settings;
   }
 
-  function applySettings (settingsObj) {
+  function applySettings(settingsObj) {
     _.forEach(settingsObj, function (value, key) {
-      const eventType = key + ':updated';
+      const eventType = key + ":updated";
       $rootScope.$broadcast(eventType, value);
-      _.set(_settings, [key, 'value'], value);
+      _.set(_settings, [key, "value"], value);
     });
-    $rootScope.$broadcast('settings:changed');
+    $rootScope.$broadcast("settings:changed");
   }
 
   return {
     getSettings: getSettings,
     applySettings: applySettings,
-    load: load
+    load: load,
   };
 }
