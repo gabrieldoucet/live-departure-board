@@ -4,10 +4,12 @@ const settingsService = require(
   path.join("..", "server", "services", "settingsService")
 );
 
-it("should return the correct value", function () {
-  const settingsFromRequest = { crs: { value: "ABC", key1: "something" } };
+describe("Main settings service tests", function () {
+  it("should return the correct value", function () {
+    const settingsFromRequest = { crs: { value: "ABC", key1: "something" } };
 
-  const actual = settingsService.getValues(settingsFromRequest);
+    const actual = settingsService.getValues(settingsFromRequest);
 
-  assert.deepEqual(actual, { crs: "ABC" });
+    assert.deepEqual(actual, { crs: "ABC" });
+  });
 });
