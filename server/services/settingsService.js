@@ -7,5 +7,5 @@ const getValues = function (settingsObj) {
 };
 
 module.exports = {
-  getValues: getValues,
+  getValues,
 };

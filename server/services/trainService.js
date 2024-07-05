@@ -13,8 +13,8 @@ const getRequestParams = function (settings) {
   const { nbRows, timeOffset, timeWindow, filterType, filterCrs } = settings;
   const params = {
     numRows: nbRows,
-    timeOffset: timeOffset,
-    timeWindow: timeWindow,
+    timeOffset,
+    timeWindow,
   };
   if (!_.isNil(filterType) && !_.isNil(filterCrs)) {
     _.set(params, ["filterType"], filterType);
@@ -33,7 +33,7 @@ const trainDecorator = function (_train) {
     "0",
     "locationName",
   ]);
-  let callingPoints = _.get(_train, [
+  const callingPoints = _.get(_train, [
     "subsequentCallingPoints",
     "0",
     "callingPoint",
@@ -53,7 +53,6 @@ const getDepartures = function (trainServices, crs) {
 
 const getDepartureBoard = function (settingsObj) {
   const settings = settingsService.getValues(settingsObj);
-  console.log(settings);
   const params = getRequestParams(settings);
   const crs = _.get(settings, ["crs"]);
   const options = {
@@ -64,7 +63,7 @@ const getDepartureBoard = function (settingsObj) {
       "x-apikey": `${API_TOKEN}`,
       Accept: "application/json",
     },
-    params: params,
+    params,
   };
 
   return axios(options)
@@ -78,6 +77,6 @@ const getDepartureBoard = function (settingsObj) {
 };
 
 module.exports = {
-  getDepartureBoard: getDepartureBoard,
-  getStations: getStations,
+  getDepartureBoard,
+  getStations,
 };
