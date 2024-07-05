@@ -1,774 +1,774 @@
 {
-    "$": {
-        "xmlns:lt": "http://thalesgroup.com/RTTI/2012-01-13/ldb/types",
-        "xmlns:lt6": "http://thalesgroup.com/RTTI/2017-02-02/ldb/types",
-        "xmlns:lt7": "http://thalesgroup.com/RTTI/2017-10-01/ldb/types",
-        "xmlns:lt4": "http://thalesgroup.com/RTTI/2015-11-27/ldb/types",
-        "xmlns:lt5": "http://thalesgroup.com/RTTI/2016-02-16/ldb/types",
-        "xmlns:lt2": "http://thalesgroup.com/RTTI/2014-02-20/ldb/types",
-        "xmlns:lt3": "http://thalesgroup.com/RTTI/2015-05-14/ldb/types"
-    },
-    "lt4:generatedAt": "2020-04-15T21:02:29.8733666+01:00",
-    "lt4:locationName": "Glasgow Central",
-    "lt4:crs": "GLC",
-    "lt4:nrccMessages": {
-        "lt:message": "Reduced timetable in operation. In line with government advice, you should only be travelling if you are a key worker or it is essential for you to do so. If you must travel, always practice social distancing. More details can be found <A href=\"http://nationalrail.co.uk/service_disruptions/245388.aspx\">here</A>."
-    },
-    "lt4:platformAvailable": "true",
-    "lt7:trainServices": {
-        "lt7:service": [
-            {
-                "lt4:std": "21:22",
-                "lt4:etd": "On time",
-                "lt4:operator": "ScotRail",
-                "lt4:operatorCode": "SR",
-                "lt4:serviceType": "train",
-                "lt4:serviceID": "KH0ERDaLGcupU96W9giekA==",
-                "lt5:rsid": "SR666400",
-                "lt5:origin": {
-                    "lt4:location": {
-                        "lt4:locationName": "Glasgow Central",
-                        "lt4:crs": "GLC"
-                    }
-                },
-                "lt5:destination": {
-                    "lt4:location": {
-                        "lt4:locationName": "Lanark",
-                        "lt4:crs": "LNK",
-                        "lt4:via": "via Bellshill & Shieldmuir"
-                    }
-                },
-                "lt7:subsequentCallingPoints": {
-                    "lt7:callingPointList": {
-                        "lt7:callingPoint": [
-                            {
-                                "lt7:locationName": "Cambuslang",
-                                "lt7:crs": "CBL",
-                                "lt7:st": "21:33",
-                                "lt7:et": "On time"
-                            },
-                            {
-                                "lt7:locationName": "Uddingston",
-                                "lt7:crs": "UDD",
-                                "lt7:st": "21:37",
-                                "lt7:et": "On time"
-                            },
-                            {
-                                "lt7:locationName": "Bellshill",
-                                "lt7:crs": "BLH",
-                                "lt7:st": "21:42",
-                                "lt7:et": "On time"
-                            },
-                            {
-                                "lt7:locationName": "Motherwell",
-                                "lt7:crs": "MTH",
-                                "lt7:st": "21:49",
-                                "lt7:et": "On time"
-                            },
-                            {
-                                "lt7:locationName": "Shieldmuir",
-                                "lt7:crs": "SDM",
-                                "lt7:st": "21:53",
-                                "lt7:et": "On time"
-                            },
-                            {
-                                "lt7:locationName": "Wishaw",
-                                "lt7:crs": "WSH",
-                                "lt7:st": "21:56",
-                                "lt7:et": "On time"
-                            },
-                            {
-                                "lt7:locationName": "Carluke",
-                                "lt7:crs": "CLU",
-                                "lt7:st": "22:02",
-                                "lt7:et": "On time"
-                            },
-                            {
-                                "lt7:locationName": "Lanark",
-                                "lt7:crs": "LNK",
-                                "lt7:st": "22:13",
-                                "lt7:et": "On time"
-                            }
-                        ]
-                    }
-                }
-            },
-            {
-                "lt4:std": "21:23",
-                "lt4:etd": "On time",
-                "lt4:platform": "17",
-                "lt4:operator": "ScotRail",
-                "lt4:operatorCode": "SR",
-                "lt4:serviceType": "train",
-                "lt4:serviceID": "nsKQczqK3AtOBvYTIQtB2A==",
-                "lt5:rsid": "SR696300",
-                "lt5:origin": {
-                    "lt4:location": {
-                        "lt4:locationName": "Motherwell",
-                        "lt4:crs": "MTH"
-                    }
-                },
-                "lt5:destination": {
-                    "lt4:location": {
-                        "lt4:locationName": "Dalmuir",
-                        "lt4:crs": "DMR",
-                        "lt4:via": "via Yoker"
-                    }
-                },
-                "lt7:subsequentCallingPoints": {
-                    "lt7:callingPointList": {
-                        "lt7:callingPoint": [
-                            {
-                                "lt7:locationName": "Anderston",
-                                "lt7:crs": "AND",
-                                "lt7:st": "21:24",
-                                "lt7:et": "On time"
-                            },
-                            {
-                                "lt7:locationName": "Exhibition Centre",
-                                "lt7:crs": "EXG",
-                                "lt7:st": "21:26",
-                                "lt7:et": "On time"
-                            },
-                            {
-                                "lt7:locationName": "Partick",
-                                "lt7:crs": "PTK",
-                                "lt7:st": "21:30",
-                                "lt7:et": "On time"
-                            },
-                            {
-                                "lt7:locationName": "Hyndland",
-                                "lt7:crs": "HYN",
-                                "lt7:st": "21:32",
-                                "lt7:et": "On time"
-                            },
-                            {
-                                "lt7:locationName": "Jordanhill",
-                                "lt7:crs": "JOR",
-                                "lt7:st": "21:34",
-                                "lt7:et": "On time"
-                            },
-                            {
-                                "lt7:locationName": "Scotstounhill",
-                                "lt7:crs": "SCH",
-                                "lt7:st": "21:37",
-                                "lt7:et": "On time"
-                            },
-                            {
-                                "lt7:locationName": "Garscadden",
-                                "lt7:crs": "GRS",
-                                "lt7:st": "21:39",
-                                "lt7:et": "On time"
-                            },
-                            {
-                                "lt7:locationName": "Yoker",
-                                "lt7:crs": "YOK",
-                                "lt7:st": "21:41",
-                                "lt7:et": "On time"
-                            },
-                            {
-                                "lt7:locationName": "Clydebank",
-                                "lt7:crs": "CYK",
-                                "lt7:st": "21:43",
-                                "lt7:et": "On time"
-                            },
-                            {
-                                "lt7:locationName": "Dalmuir",
-                                "lt7:crs": "DMR",
-                                "lt7:st": "21:47",
-                                "lt7:et": "On time"
-                            }
-                        ]
-                    }
-                }
-            },
-            {
-                "lt4:std": "21:27",
-                "lt4:etd": "On time",
-                "lt4:platform": "16",
-                "lt4:operator": "ScotRail",
-                "lt4:operatorCode": "SR",
-                "lt4:serviceType": "train",
-                "lt4:serviceID": "IBVPeuaF3LFImWHKqIuM8w==",
-                "lt5:rsid": "SR975100",
-                "lt5:origin": {
-                    "lt4:location": {
-                        "lt4:locationName": "Dalmuir",
-                        "lt4:crs": "DMR"
-                    }
-                },
-                "lt5:destination": {
-                    "lt4:location": {
-                        "lt4:locationName": "Motherwell",
-                        "lt4:crs": "MTH"
-                    }
-                },
-                "lt7:subsequentCallingPoints": {
-                    "lt7:callingPointList": {
-                        "lt7:callingPoint": [
-                            {
-                                "lt7:locationName": "Argyle Street",
-                                "lt7:crs": "AGS",
-                                "lt7:st": "21:29",
-                                "lt7:et": "On time"
-                            },
-                            {
-                                "lt7:locationName": "Bridgeton",
-                                "lt7:crs": "BDG",
-                                "lt7:st": "21:32",
-                                "lt7:et": "On time"
-                            },
-                            {
-                                "lt7:locationName": "Dalmarnock",
-                                "lt7:crs": "DAK",
-                                "lt7:st": "21:34",
-                                "lt7:et": "On time"
-                            },
-                            {
-                                "lt7:locationName": "Rutherglen",
-                                "lt7:crs": "RUT",
-                                "lt7:st": "21:36",
-                                "lt7:et": "On time"
-                            },
-                            {
-                                "lt7:locationName": "Carmyle",
-                                "lt7:crs": "CML",
-                                "lt7:st": "21:41",
-                                "lt7:et": "On time"
-                            },
-                            {
-                                "lt7:locationName": "Mount Vernon",
-                                "lt7:crs": "MTV",
-                                "lt7:st": "21:44",
-                                "lt7:et": "On time"
-                            },
-                            {
-                                "lt7:locationName": "Baillieston",
-                                "lt7:crs": "BIO",
-                                "lt7:st": "21:46",
-                                "lt7:et": "On time"
-                            },
-                            {
-                                "lt7:locationName": "Bargeddie",
-                                "lt7:crs": "BGI",
-                                "lt7:st": "21:49",
-                                "lt7:et": "On time"
-                            },
-                            {
-                                "lt7:locationName": "Kirkwood",
-                                "lt7:crs": "KWD",
-                                "lt7:st": "21:53",
-                                "lt7:et": "On time"
-                            },
-                            {
-                                "lt7:locationName": "Whifflet",
-                                "lt7:crs": "WFF",
-                                "lt7:st": "21:57",
-                                "lt7:et": "On time"
-                            },
-                            {
-                                "lt7:locationName": "Motherwell",
-                                "lt7:crs": "MTH",
-                                "lt7:st": "22:04",
-                                "lt7:et": "On time"
-                            }
-                        ]
-                    }
-                }
-            },
-            {
-                "lt4:std": "21:50",
-                "lt4:etd": "On time",
-                "lt4:operator": "ScotRail",
-                "lt4:operatorCode": "SR",
-                "lt4:serviceType": "train",
-                "lt4:serviceID": "SDzco+ztjsmDc3U4I8HtHg==",
-                "lt5:rsid": "SR413400",
-                "lt5:origin": {
-                    "lt4:location": {
-                        "lt4:locationName": "Glasgow Central",
-                        "lt4:crs": "GLC"
-                    }
-                },
-                "lt5:destination": {
-                    "lt4:location": {
-                        "lt4:locationName": "Gourock",
-                        "lt4:crs": "GRK"
-                    }
-                },
-                "lt7:subsequentCallingPoints": {
-                    "lt7:callingPointList": {
-                        "lt7:callingPoint": [
-                            {
-                                "lt7:locationName": "Cardonald",
-                                "lt7:crs": "CDO",
-                                "lt7:st": "21:57",
-                                "lt7:et": "On time"
-                            },
-                            {
-                                "lt7:locationName": "Hillington East",
-                                "lt7:crs": "HLE",
-                                "lt7:st": "21:59",
-                                "lt7:et": "On time"
-                            },
-                            {
-                                "lt7:locationName": "Hillington West",
-                                "lt7:crs": "HLW",
-                                "lt7:st": "22:01",
-                                "lt7:et": "On time"
-                            },
-                            {
-                                "lt7:locationName": "Paisley Gilmour Street",
-                                "lt7:crs": "PYG",
-                                "lt7:st": "22:05",
-                                "lt7:et": "On time"
-                            },
-                            {
-                                "lt7:locationName": "Paisley St James",
-                                "lt7:crs": "PYJ",
-                                "lt7:st": "22:07",
-                                "lt7:et": "On time"
-                            },
-                            {
-                                "lt7:locationName": "Bishopton",
-                                "lt7:crs": "BPT",
-                                "lt7:st": "22:12",
-                                "lt7:et": "On time"
-                            },
-                            {
-                                "lt7:locationName": "Langbank",
-                                "lt7:crs": "LGB",
-                                "lt7:st": "22:18",
-                                "lt7:et": "On time"
-                            },
-                            {
-                                "lt7:locationName": "Woodhall",
-                                "lt7:crs": "WDL",
-                                "lt7:st": "22:22",
-                                "lt7:et": "On time"
-                            },
-                            {
-                                "lt7:locationName": "Port Glasgow",
-                                "lt7:crs": "PTG",
-                                "lt7:st": "22:25",
-                                "lt7:et": "On time"
-                            },
-                            {
-                                "lt7:locationName": "Bogston",
-                                "lt7:crs": "BGS",
-                                "lt7:st": "22:27",
-                                "lt7:et": "On time"
-                            },
-                            {
-                                "lt7:locationName": "Cartsdyke",
-                                "lt7:crs": "CDY",
-                                "lt7:st": "22:29",
-                                "lt7:et": "On time"
-                            },
-                            {
-                                "lt7:locationName": "Greenock Central",
-                                "lt7:crs": "GKC",
-                                "lt7:st": "22:31",
-                                "lt7:et": "On time"
-                            },
-                            {
-                                "lt7:locationName": "Greenock West",
-                                "lt7:crs": "GKW",
-                                "lt7:st": "22:33",
-                                "lt7:et": "On time"
-                            },
-                            {
-                                "lt7:locationName": "Fort Matilda",
-                                "lt7:crs": "FTM",
-                                "lt7:st": "22:36",
-                                "lt7:et": "On time"
-                            },
-                            {
-                                "lt7:locationName": "Gourock",
-                                "lt7:crs": "GRK",
-                                "lt7:st": "22:40",
-                                "lt7:et": "On time"
-                            }
-                        ]
-                    }
-                }
-            },
-            {
-                "lt4:std": "21:52",
-                "lt4:etd": "On time",
-                "lt4:platform": "17",
-                "lt4:operator": "ScotRail",
-                "lt4:operatorCode": "SR",
-                "lt4:serviceType": "train",
-                "lt4:serviceID": "SrwdtlPb3ckGJsUjDNQWxw==",
-                "lt5:rsid": "SR699500",
-                "lt5:origin": {
-                    "lt4:location": {
-                        "lt4:locationName": "Motherwell",
-                        "lt4:crs": "MTH"
-                    }
-                },
-                "lt5:destination": {
-                    "lt4:location": {
-                        "lt4:locationName": "Dalmuir",
-                        "lt4:crs": "DMR",
-                        "lt4:via": "via Yoker"
-                    }
-                },
-                "lt7:subsequentCallingPoints": {
-                    "lt7:callingPointList": {
-                        "lt7:callingPoint": [
-                            {
-                                "lt7:locationName": "Anderston",
-                                "lt7:crs": "AND",
-                                "lt7:st": "21:53",
-                                "lt7:et": "On time"
-                            },
-                            {
-                                "lt7:locationName": "Exhibition Centre",
-                                "lt7:crs": "EXG",
-                                "lt7:st": "21:55",
-                                "lt7:et": "On time"
-                            },
-                            {
-                                "lt7:locationName": "Partick",
-                                "lt7:crs": "PTK",
-                                "lt7:st": "21:59",
-                                "lt7:et": "On time"
-                            },
-                            {
-                                "lt7:locationName": "Hyndland",
-                                "lt7:crs": "HYN",
-                                "lt7:st": "22:01",
-                                "lt7:et": "On time"
-                            },
-                            {
-                                "lt7:locationName": "Jordanhill",
-                                "lt7:crs": "JOR",
-                                "lt7:st": "22:03",
-                                "lt7:et": "On time"
-                            },
-                            {
-                                "lt7:locationName": "Scotstounhill",
-                                "lt7:crs": "SCH",
-                                "lt7:st": "22:05",
-                                "lt7:et": "On time"
-                            },
-                            {
-                                "lt7:locationName": "Garscadden",
-                                "lt7:crs": "GRS",
-                                "lt7:st": "22:07",
-                                "lt7:et": "On time"
-                            },
-                            {
-                                "lt7:locationName": "Yoker",
-                                "lt7:crs": "YOK",
-                                "lt7:st": "22:10",
-                                "lt7:et": "On time"
-                            },
-                            {
-                                "lt7:locationName": "Clydebank",
-                                "lt7:crs": "CYK",
-                                "lt7:st": "22:12",
-                                "lt7:et": "On time"
-                            },
-                            {
-                                "lt7:locationName": "Dalmuir",
-                                "lt7:crs": "DMR",
-                                "lt7:st": "22:16",
-                                "lt7:et": "On time"
-                            }
-                        ]
-                    }
-                }
-            },
-            {
-                "lt4:std": "21:57",
-                "lt4:etd": "On time",
-                "lt4:platform": "16",
-                "lt4:operator": "ScotRail",
-                "lt4:operatorCode": "SR",
-                "lt4:serviceType": "train",
-                "lt4:serviceID": "6RpZObhUxWo6CxcQcoY4SA==",
-                "lt5:rsid": "SR975300",
-                "lt5:origin": {
-                    "lt4:location": {
-                        "lt4:locationName": "Dalmuir",
-                        "lt4:crs": "DMR"
-                    }
-                },
-                "lt5:destination": {
-                    "lt4:location": {
-                        "lt4:locationName": "Whifflet",
-                        "lt4:crs": "WFF",
-                        "lt4:via": "via Carmyle"
-                    }
-                },
-                "lt7:subsequentCallingPoints": {
-                    "lt7:callingPointList": {
-                        "lt7:callingPoint": [
-                            {
-                                "lt7:locationName": "Argyle Street",
-                                "lt7:crs": "AGS",
-                                "lt7:st": "21:59",
-                                "lt7:et": "On time"
-                            },
-                            {
-                                "lt7:locationName": "Bridgeton",
-                                "lt7:crs": "BDG",
-                                "lt7:st": "22:02",
-                                "lt7:et": "On time"
-                            },
-                            {
-                                "lt7:locationName": "Dalmarnock",
-                                "lt7:crs": "DAK",
-                                "lt7:st": "22:04",
-                                "lt7:et": "On time"
-                            },
-                            {
-                                "lt7:locationName": "Rutherglen",
-                                "lt7:crs": "RUT",
-                                "lt7:st": "22:06",
-                                "lt7:et": "On time"
-                            },
-                            {
-                                "lt7:locationName": "Carmyle",
-                                "lt7:crs": "CML",
-                                "lt7:st": "22:11",
-                                "lt7:et": "On time"
-                            },
-                            {
-                                "lt7:locationName": "Mount Vernon",
-                                "lt7:crs": "MTV",
-                                "lt7:st": "22:14",
-                                "lt7:et": "On time"
-                            },
-                            {
-                                "lt7:locationName": "Baillieston",
-                                "lt7:crs": "BIO",
-                                "lt7:st": "22:16",
-                                "lt7:et": "On time"
-                            },
-                            {
-                                "lt7:locationName": "Bargeddie",
-                                "lt7:crs": "BGI",
-                                "lt7:st": "22:19",
-                                "lt7:et": "On time"
-                            },
-                            {
-                                "lt7:locationName": "Kirkwood",
-                                "lt7:crs": "KWD",
-                                "lt7:st": "22:23",
-                                "lt7:et": "On time"
-                            },
-                            {
-                                "lt7:locationName": "Whifflet",
-                                "lt7:crs": "WFF",
-                                "lt7:st": "22:27",
-                                "lt7:et": "On time"
-                            }
-                        ]
-                    }
-                }
-            },
-            {
-                "lt4:std": "22:00",
-                "lt4:etd": "On time",
-                "lt4:operator": "ScotRail",
-                "lt4:operatorCode": "SR",
-                "lt4:serviceType": "train",
-                "lt4:serviceID": "YkWi5iLyt6TKGT5TrhmWew==",
-                "lt5:rsid": "SR804100",
-                "lt5:origin": {
-                    "lt4:location": {
-                        "lt4:locationName": "Glasgow Central",
-                        "lt4:crs": "GLC"
-                    }
-                },
-                "lt5:destination": {
-                    "lt4:location": {
-                        "lt4:locationName": "Ayr",
-                        "lt4:crs": "AYR"
-                    }
-                },
-                "lt7:subsequentCallingPoints": {
-                    "lt7:callingPointList": {
-                        "lt7:callingPoint": [
-                            {
-                                "lt7:locationName": "Paisley Gilmour Street",
-                                "lt7:crs": "PYG",
-                                "lt7:st": "22:09",
-                                "lt7:et": "On time"
-                            },
-                            {
-                                "lt7:locationName": "Johnstone",
-                                "lt7:crs": "JHN",
-                                "lt7:st": "22:14",
-                                "lt7:et": "On time"
-                            },
-                            {
-                                "lt7:locationName": "Milliken Park",
-                                "lt7:crs": "MIN",
-                                "lt7:st": "22:17",
-                                "lt7:et": "On time"
-                            },
-                            {
-                                "lt7:locationName": "Howwood",
-                                "lt7:crs": "HOZ",
-                                "lt7:st": "22:19",
-                                "lt7:et": "On time"
-                            },
-                            {
-                                "lt7:locationName": "Lochwinnoch",
-                                "lt7:crs": "LHW",
-                                "lt7:st": "22:23",
-                                "lt7:et": "On time"
-                            },
-                            {
-                                "lt7:locationName": "Glengarnock",
-                                "lt7:crs": "GLG",
-                                "lt7:st": "22:28",
-                                "lt7:et": "On time"
-                            },
-                            {
-                                "lt7:locationName": "Dalry",
-                                "lt7:crs": "DLY",
-                                "lt7:st": "22:32",
-                                "lt7:et": "On time"
-                            },
-                            {
-                                "lt7:locationName": "Kilwinning",
-                                "lt7:crs": "KWN",
-                                "lt7:st": "22:36",
-                                "lt7:et": "On time"
-                            },
-                            {
-                                "lt7:locationName": "Irvine",
-                                "lt7:crs": "IRV",
-                                "lt7:st": "22:40",
-                                "lt7:et": "On time"
-                            },
-                            {
-                                "lt7:locationName": "Barassie",
-                                "lt7:crs": "BSS",
-                                "lt7:st": "22:44",
-                                "lt7:et": "On time"
-                            },
-                            {
-                                "lt7:locationName": "Troon",
-                                "lt7:crs": "TRN",
-                                "lt7:st": "22:47",
-                                "lt7:et": "On time"
-                            },
-                            {
-                                "lt7:locationName": "Prestwick Intl Airport",
-                                "lt7:crs": "PRA",
-                                "lt7:st": "22:51",
-                                "lt7:et": "On time"
-                            },
-                            {
-                                "lt7:locationName": "Prestwick Town",
-                                "lt7:crs": "PTW",
-                                "lt7:st": "22:53",
-                                "lt7:et": "On time"
-                            },
-                            {
-                                "lt7:locationName": "Newton-on-Ayr",
-                                "lt7:crs": "NOA",
-                                "lt7:st": "22:56",
-                                "lt7:et": "On time"
-                            },
-                            {
-                                "lt7:locationName": "Ayr",
-                                "lt7:crs": "AYR",
-                                "lt7:st": "23:01",
-                                "lt7:et": "On time"
-                            }
-                        ]
-                    }
-                }
-            },
-            {
-                "lt4:std": "22:17",
-                "lt4:etd": "On time",
-                "lt4:operator": "ScotRail",
-                "lt4:operatorCode": "SR",
-                "lt4:serviceType": "train",
-                "lt4:serviceID": "Mf+kDlSzvx8R/3XKbPzuNQ==",
-                "lt5:rsid": "SR831200",
-                "lt5:origin": {
-                    "lt4:location": {
-                        "lt4:locationName": "Glasgow Central",
-                        "lt4:crs": "GLC"
-                    }
-                },
-                "lt5:destination": {
-                    "lt4:location": {
-                        "lt4:locationName": "East Kilbride",
-                        "lt4:crs": "EKL"
-                    }
-                },
-                "lt7:subsequentCallingPoints": {
-                    "lt7:callingPointList": {
-                        "lt7:callingPoint": [
-                            {
-                                "lt7:locationName": "Crossmyloof",
-                                "lt7:crs": "CMY",
-                                "lt7:st": "22:24",
-                                "lt7:et": "On time"
-                            },
-                            {
-                                "lt7:locationName": "Pollokshaws West",
-                                "lt7:crs": "PWW",
-                                "lt7:st": "22:26",
-                                "lt7:et": "On time"
-                            },
-                            {
-                                "lt7:locationName": "Thornliebank",
-                                "lt7:crs": "THB",
-                                "lt7:st": "22:29",
-                                "lt7:et": "On time"
-                            },
-                            {
-                                "lt7:locationName": "Giffnock",
-                                "lt7:crs": "GFN",
-                                "lt7:st": "22:32",
-                                "lt7:et": "On time"
-                            },
-                            {
-                                "lt7:locationName": "Clarkston",
-                                "lt7:crs": "CKS",
-                                "lt7:st": "22:36",
-                                "lt7:et": "On time"
-                            },
-                            {
-                                "lt7:locationName": "Busby",
-                                "lt7:crs": "BUS",
-                                "lt7:st": "22:40",
-                                "lt7:et": "On time"
-                            },
-                            {
-                                "lt7:locationName": "Thorntonhall",
-                                "lt7:crs": "THT",
-                                "lt7:st": "22:43",
-                                "lt7:et": "On time"
-                            },
-                            {
-                                "lt7:locationName": "Hairmyres",
-                                "lt7:crs": "HMY",
-                                "lt7:st": "22:46",
-                                "lt7:et": "On time"
-                            },
-                            {
-                                "lt7:locationName": "East Kilbride",
-                                "lt7:crs": "EKL",
-                                "lt7:st": "22:50",
-                                "lt7:et": "On time"
-                            }
-                        ]
-                    }
-                }
-            }
-        ]
-    }
+  "$": {
+    "xmlns:lt": "http://thalesgroup.com/RTTI/2012-01-13/ldb/types",
+    "xmlns:lt6": "http://thalesgroup.com/RTTI/2017-02-02/ldb/types",
+    "xmlns:lt7": "http://thalesgroup.com/RTTI/2017-10-01/ldb/types",
+    "xmlns:lt4": "http://thalesgroup.com/RTTI/2015-11-27/ldb/types",
+    "xmlns:lt5": "http://thalesgroup.com/RTTI/2016-02-16/ldb/types",
+    "xmlns:lt2": "http://thalesgroup.com/RTTI/2014-02-20/ldb/types",
+    "xmlns:lt3": "http://thalesgroup.com/RTTI/2015-05-14/ldb/types"
+  },
+  "lt4:generatedAt": "2020-04-15T21:02:29.8733666+01:00",
+  "lt4:locationName": "Glasgow Central",
+  "lt4:crs": "GLC",
+  "lt4:nrccMessages": {
+    "lt:message": "Reduced timetable in operation. In line with government advice, you should only be travelling if you are a key worker or it is essential for you to do so. If you must travel, always practice social distancing. More details can be found <A href=\"http://nationalrail.co.uk/service_disruptions/245388.aspx\">here</A>."
+  },
+  "lt4:platformAvailable": "true",
+  "lt7:trainServices": {
+    "lt7:service": [
+      {
+        "lt4:std": "21:22",
+        "lt4:etd": "On time",
+        "lt4:operator": "ScotRail",
+        "lt4:operatorCode": "SR",
+        "lt4:serviceType": "train",
+        "lt4:serviceID": "KH0ERDaLGcupU96W9giekA==",
+        "lt5:rsid": "SR666400",
+        "lt5:origin": {
+          "lt4:location": {
+            "lt4:locationName": "Glasgow Central",
+            "lt4:crs": "GLC"
+          }
+        },
+        "lt5:destination": {
+          "lt4:location": {
+            "lt4:locationName": "Lanark",
+            "lt4:crs": "LNK",
+            "lt4:via": "via Bellshill & Shieldmuir"
+          }
+        },
+        "lt7:subsequentCallingPoints": {
+          "lt7:callingPointList": {
+            "lt7:callingPoint": [
+              {
+                "lt7:locationName": "Cambuslang",
+                "lt7:crs": "CBL",
+                "lt7:st": "21:33",
+                "lt7:et": "On time"
+              },
+              {
+                "lt7:locationName": "Uddingston",
+                "lt7:crs": "UDD",
+                "lt7:st": "21:37",
+                "lt7:et": "On time"
+              },
+              {
+                "lt7:locationName": "Bellshill",
+                "lt7:crs": "BLH",
+                "lt7:st": "21:42",
+                "lt7:et": "On time"
+              },
+              {
+                "lt7:locationName": "Motherwell",
+                "lt7:crs": "MTH",
+                "lt7:st": "21:49",
+                "lt7:et": "On time"
+              },
+              {
+                "lt7:locationName": "Shieldmuir",
+                "lt7:crs": "SDM",
+                "lt7:st": "21:53",
+                "lt7:et": "On time"
+              },
+              {
+                "lt7:locationName": "Wishaw",
+                "lt7:crs": "WSH",
+                "lt7:st": "21:56",
+                "lt7:et": "On time"
+              },
+              {
+                "lt7:locationName": "Carluke",
+                "lt7:crs": "CLU",
+                "lt7:st": "22:02",
+                "lt7:et": "On time"
+              },
+              {
+                "lt7:locationName": "Lanark",
+                "lt7:crs": "LNK",
+                "lt7:st": "22:13",
+                "lt7:et": "On time"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "lt4:std": "21:23",
+        "lt4:etd": "On time",
+        "lt4:platform": "17",
+        "lt4:operator": "ScotRail",
+        "lt4:operatorCode": "SR",
+        "lt4:serviceType": "train",
+        "lt4:serviceID": "nsKQczqK3AtOBvYTIQtB2A==",
+        "lt5:rsid": "SR696300",
+        "lt5:origin": {
+          "lt4:location": {
+            "lt4:locationName": "Motherwell",
+            "lt4:crs": "MTH"
+          }
+        },
+        "lt5:destination": {
+          "lt4:location": {
+            "lt4:locationName": "Dalmuir",
+            "lt4:crs": "DMR",
+            "lt4:via": "via Yoker"
+          }
+        },
+        "lt7:subsequentCallingPoints": {
+          "lt7:callingPointList": {
+            "lt7:callingPoint": [
+              {
+                "lt7:locationName": "Anderston",
+                "lt7:crs": "AND",
+                "lt7:st": "21:24",
+                "lt7:et": "On time"
+              },
+              {
+                "lt7:locationName": "Exhibition Centre",
+                "lt7:crs": "EXG",
+                "lt7:st": "21:26",
+                "lt7:et": "On time"
+              },
+              {
+                "lt7:locationName": "Partick",
+                "lt7:crs": "PTK",
+                "lt7:st": "21:30",
+                "lt7:et": "On time"
+              },
+              {
+                "lt7:locationName": "Hyndland",
+                "lt7:crs": "HYN",
+                "lt7:st": "21:32",
+                "lt7:et": "On time"
+              },
+              {
+                "lt7:locationName": "Jordanhill",
+                "lt7:crs": "JOR",
+                "lt7:st": "21:34",
+                "lt7:et": "On time"
+              },
+              {
+                "lt7:locationName": "Scotstounhill",
+                "lt7:crs": "SCH",
+                "lt7:st": "21:37",
+                "lt7:et": "On time"
+              },
+              {
+                "lt7:locationName": "Garscadden",
+                "lt7:crs": "GRS",
+                "lt7:st": "21:39",
+                "lt7:et": "On time"
+              },
+              {
+                "lt7:locationName": "Yoker",
+                "lt7:crs": "YOK",
+                "lt7:st": "21:41",
+                "lt7:et": "On time"
+              },
+              {
+                "lt7:locationName": "Clydebank",
+                "lt7:crs": "CYK",
+                "lt7:st": "21:43",
+                "lt7:et": "On time"
+              },
+              {
+                "lt7:locationName": "Dalmuir",
+                "lt7:crs": "DMR",
+                "lt7:st": "21:47",
+                "lt7:et": "On time"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "lt4:std": "21:27",
+        "lt4:etd": "On time",
+        "lt4:platform": "16",
+        "lt4:operator": "ScotRail",
+        "lt4:operatorCode": "SR",
+        "lt4:serviceType": "train",
+        "lt4:serviceID": "IBVPeuaF3LFImWHKqIuM8w==",
+        "lt5:rsid": "SR975100",
+        "lt5:origin": {
+          "lt4:location": {
+            "lt4:locationName": "Dalmuir",
+            "lt4:crs": "DMR"
+          }
+        },
+        "lt5:destination": {
+          "lt4:location": {
+            "lt4:locationName": "Motherwell",
+            "lt4:crs": "MTH"
+          }
+        },
+        "lt7:subsequentCallingPoints": {
+          "lt7:callingPointList": {
+            "lt7:callingPoint": [
+              {
+                "lt7:locationName": "Argyle Street",
+                "lt7:crs": "AGS",
+                "lt7:st": "21:29",
+                "lt7:et": "On time"
+              },
+              {
+                "lt7:locationName": "Bridgeton",
+                "lt7:crs": "BDG",
+                "lt7:st": "21:32",
+                "lt7:et": "On time"
+              },
+              {
+                "lt7:locationName": "Dalmarnock",
+                "lt7:crs": "DAK",
+                "lt7:st": "21:34",
+                "lt7:et": "On time"
+              },
+              {
+                "lt7:locationName": "Rutherglen",
+                "lt7:crs": "RUT",
+                "lt7:st": "21:36",
+                "lt7:et": "On time"
+              },
+              {
+                "lt7:locationName": "Carmyle",
+                "lt7:crs": "CML",
+                "lt7:st": "21:41",
+                "lt7:et": "On time"
+              },
+              {
+                "lt7:locationName": "Mount Vernon",
+                "lt7:crs": "MTV",
+                "lt7:st": "21:44",
+                "lt7:et": "On time"
+              },
+              {
+                "lt7:locationName": "Baillieston",
+                "lt7:crs": "BIO",
+                "lt7:st": "21:46",
+                "lt7:et": "On time"
+              },
+              {
+                "lt7:locationName": "Bargeddie",
+                "lt7:crs": "BGI",
+                "lt7:st": "21:49",
+                "lt7:et": "On time"
+              },
+              {
+                "lt7:locationName": "Kirkwood",
+                "lt7:crs": "KWD",
+                "lt7:st": "21:53",
+                "lt7:et": "On time"
+              },
+              {
+                "lt7:locationName": "Whifflet",
+                "lt7:crs": "WFF",
+                "lt7:st": "21:57",
+                "lt7:et": "On time"
+              },
+              {
+                "lt7:locationName": "Motherwell",
+                "lt7:crs": "MTH",
+                "lt7:st": "22:04",
+                "lt7:et": "On time"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "lt4:std": "21:50",
+        "lt4:etd": "On time",
+        "lt4:operator": "ScotRail",
+        "lt4:operatorCode": "SR",
+        "lt4:serviceType": "train",
+        "lt4:serviceID": "SDzco+ztjsmDc3U4I8HtHg==",
+        "lt5:rsid": "SR413400",
+        "lt5:origin": {
+          "lt4:location": {
+            "lt4:locationName": "Glasgow Central",
+            "lt4:crs": "GLC"
+          }
+        },
+        "lt5:destination": {
+          "lt4:location": {
+            "lt4:locationName": "Gourock",
+            "lt4:crs": "GRK"
+          }
+        },
+        "lt7:subsequentCallingPoints": {
+          "lt7:callingPointList": {
+            "lt7:callingPoint": [
+              {
+                "lt7:locationName": "Cardonald",
+                "lt7:crs": "CDO",
+                "lt7:st": "21:57",
+                "lt7:et": "On time"
+              },
+              {
+                "lt7:locationName": "Hillington East",
+                "lt7:crs": "HLE",
+                "lt7:st": "21:59",
+                "lt7:et": "On time"
+              },
+              {
+                "lt7:locationName": "Hillington West",
+                "lt7:crs": "HLW",
+                "lt7:st": "22:01",
+                "lt7:et": "On time"
+              },
+              {
+                "lt7:locationName": "Paisley Gilmour Street",
+                "lt7:crs": "PYG",
+                "lt7:st": "22:05",
+                "lt7:et": "On time"
+              },
+              {
+                "lt7:locationName": "Paisley St James",
+                "lt7:crs": "PYJ",
+                "lt7:st": "22:07",
+                "lt7:et": "On time"
+              },
+              {
+                "lt7:locationName": "Bishopton",
+                "lt7:crs": "BPT",
+                "lt7:st": "22:12",
+                "lt7:et": "On time"
+              },
+              {
+                "lt7:locationName": "Langbank",
+                "lt7:crs": "LGB",
+                "lt7:st": "22:18",
+                "lt7:et": "On time"
+              },
+              {
+                "lt7:locationName": "Woodhall",
+                "lt7:crs": "WDL",
+                "lt7:st": "22:22",
+                "lt7:et": "On time"
+              },
+              {
+                "lt7:locationName": "Port Glasgow",
+                "lt7:crs": "PTG",
+                "lt7:st": "22:25",
+                "lt7:et": "On time"
+              },
+              {
+                "lt7:locationName": "Bogston",
+                "lt7:crs": "BGS",
+                "lt7:st": "22:27",
+                "lt7:et": "On time"
+              },
+              {
+                "lt7:locationName": "Cartsdyke",
+                "lt7:crs": "CDY",
+                "lt7:st": "22:29",
+                "lt7:et": "On time"
+              },
+              {
+                "lt7:locationName": "Greenock Central",
+                "lt7:crs": "GKC",
+                "lt7:st": "22:31",
+                "lt7:et": "On time"
+              },
+              {
+                "lt7:locationName": "Greenock West",
+                "lt7:crs": "GKW",
+                "lt7:st": "22:33",
+                "lt7:et": "On time"
+              },
+              {
+                "lt7:locationName": "Fort Matilda",
+                "lt7:crs": "FTM",
+                "lt7:st": "22:36",
+                "lt7:et": "On time"
+              },
+              {
+                "lt7:locationName": "Gourock",
+                "lt7:crs": "GRK",
+                "lt7:st": "22:40",
+                "lt7:et": "On time"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "lt4:std": "21:52",
+        "lt4:etd": "On time",
+        "lt4:platform": "17",
+        "lt4:operator": "ScotRail",
+        "lt4:operatorCode": "SR",
+        "lt4:serviceType": "train",
+        "lt4:serviceID": "SrwdtlPb3ckGJsUjDNQWxw==",
+        "lt5:rsid": "SR699500",
+        "lt5:origin": {
+          "lt4:location": {
+            "lt4:locationName": "Motherwell",
+            "lt4:crs": "MTH"
+          }
+        },
+        "lt5:destination": {
+          "lt4:location": {
+            "lt4:locationName": "Dalmuir",
+            "lt4:crs": "DMR",
+            "lt4:via": "via Yoker"
+          }
+        },
+        "lt7:subsequentCallingPoints": {
+          "lt7:callingPointList": {
+            "lt7:callingPoint": [
+              {
+                "lt7:locationName": "Anderston",
+                "lt7:crs": "AND",
+                "lt7:st": "21:53",
+                "lt7:et": "On time"
+              },
+              {
+                "lt7:locationName": "Exhibition Centre",
+                "lt7:crs": "EXG",
+                "lt7:st": "21:55",
+                "lt7:et": "On time"
+              },
+              {
+                "lt7:locationName": "Partick",
+                "lt7:crs": "PTK",
+                "lt7:st": "21:59",
+                "lt7:et": "On time"
+              },
+              {
+                "lt7:locationName": "Hyndland",
+                "lt7:crs": "HYN",
+                "lt7:st": "22:01",
+                "lt7:et": "On time"
+              },
+              {
+                "lt7:locationName": "Jordanhill",
+                "lt7:crs": "JOR",
+                "lt7:st": "22:03",
+                "lt7:et": "On time"
+              },
+              {
+                "lt7:locationName": "Scotstounhill",
+                "lt7:crs": "SCH",
+                "lt7:st": "22:05",
+                "lt7:et": "On time"
+              },
+              {
+                "lt7:locationName": "Garscadden",
+                "lt7:crs": "GRS",
+                "lt7:st": "22:07",
+                "lt7:et": "On time"
+              },
+              {
+                "lt7:locationName": "Yoker",
+                "lt7:crs": "YOK",
+                "lt7:st": "22:10",
+                "lt7:et": "On time"
+              },
+              {
+                "lt7:locationName": "Clydebank",
+                "lt7:crs": "CYK",
+                "lt7:st": "22:12",
+                "lt7:et": "On time"
+              },
+              {
+                "lt7:locationName": "Dalmuir",
+                "lt7:crs": "DMR",
+                "lt7:st": "22:16",
+                "lt7:et": "On time"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "lt4:std": "21:57",
+        "lt4:etd": "On time",
+        "lt4:platform": "16",
+        "lt4:operator": "ScotRail",
+        "lt4:operatorCode": "SR",
+        "lt4:serviceType": "train",
+        "lt4:serviceID": "6RpZObhUxWo6CxcQcoY4SA==",
+        "lt5:rsid": "SR975300",
+        "lt5:origin": {
+          "lt4:location": {
+            "lt4:locationName": "Dalmuir",
+            "lt4:crs": "DMR"
+          }
+        },
+        "lt5:destination": {
+          "lt4:location": {
+            "lt4:locationName": "Whifflet",
+            "lt4:crs": "WFF",
+            "lt4:via": "via Carmyle"
+          }
+        },
+        "lt7:subsequentCallingPoints": {
+          "lt7:callingPointList": {
+            "lt7:callingPoint": [
+              {
+                "lt7:locationName": "Argyle Street",
+                "lt7:crs": "AGS",
+                "lt7:st": "21:59",
+                "lt7:et": "On time"
+              },
+              {
+                "lt7:locationName": "Bridgeton",
+                "lt7:crs": "BDG",
+                "lt7:st": "22:02",
+                "lt7:et": "On time"
+              },
+              {
+                "lt7:locationName": "Dalmarnock",
+                "lt7:crs": "DAK",
+                "lt7:st": "22:04",
+                "lt7:et": "On time"
+              },
+              {
+                "lt7:locationName": "Rutherglen",
+                "lt7:crs": "RUT",
+                "lt7:st": "22:06",
+                "lt7:et": "On time"
+              },
+              {
+                "lt7:locationName": "Carmyle",
+                "lt7:crs": "CML",
+                "lt7:st": "22:11",
+                "lt7:et": "On time"
+              },
+              {
+                "lt7:locationName": "Mount Vernon",
+                "lt7:crs": "MTV",
+                "lt7:st": "22:14",
+                "lt7:et": "On time"
+              },
+              {
+                "lt7:locationName": "Baillieston",
+                "lt7:crs": "BIO",
+                "lt7:st": "22:16",
+                "lt7:et": "On time"
+              },
+              {
+                "lt7:locationName": "Bargeddie",
+                "lt7:crs": "BGI",
+                "lt7:st": "22:19",
+                "lt7:et": "On time"
+              },
+              {
+                "lt7:locationName": "Kirkwood",
+                "lt7:crs": "KWD",
+                "lt7:st": "22:23",
+                "lt7:et": "On time"
+              },
+              {
+                "lt7:locationName": "Whifflet",
+                "lt7:crs": "WFF",
+                "lt7:st": "22:27",
+                "lt7:et": "On time"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "lt4:std": "22:00",
+        "lt4:etd": "On time",
+        "lt4:operator": "ScotRail",
+        "lt4:operatorCode": "SR",
+        "lt4:serviceType": "train",
+        "lt4:serviceID": "YkWi5iLyt6TKGT5TrhmWew==",
+        "lt5:rsid": "SR804100",
+        "lt5:origin": {
+          "lt4:location": {
+            "lt4:locationName": "Glasgow Central",
+            "lt4:crs": "GLC"
+          }
+        },
+        "lt5:destination": {
+          "lt4:location": {
+            "lt4:locationName": "Ayr",
+            "lt4:crs": "AYR"
+          }
+        },
+        "lt7:subsequentCallingPoints": {
+          "lt7:callingPointList": {
+            "lt7:callingPoint": [
+              {
+                "lt7:locationName": "Paisley Gilmour Street",
+                "lt7:crs": "PYG",
+                "lt7:st": "22:09",
+                "lt7:et": "On time"
+              },
+              {
+                "lt7:locationName": "Johnstone",
+                "lt7:crs": "JHN",
+                "lt7:st": "22:14",
+                "lt7:et": "On time"
+              },
+              {
+                "lt7:locationName": "Milliken Park",
+                "lt7:crs": "MIN",
+                "lt7:st": "22:17",
+                "lt7:et": "On time"
+              },
+              {
+                "lt7:locationName": "Howwood",
+                "lt7:crs": "HOZ",
+                "lt7:st": "22:19",
+                "lt7:et": "On time"
+              },
+              {
+                "lt7:locationName": "Lochwinnoch",
+                "lt7:crs": "LHW",
+                "lt7:st": "22:23",
+                "lt7:et": "On time"
+              },
+              {
+                "lt7:locationName": "Glengarnock",
+                "lt7:crs": "GLG",
+                "lt7:st": "22:28",
+                "lt7:et": "On time"
+              },
+              {
+                "lt7:locationName": "Dalry",
+                "lt7:crs": "DLY",
+                "lt7:st": "22:32",
+                "lt7:et": "On time"
+              },
+              {
+                "lt7:locationName": "Kilwinning",
+                "lt7:crs": "KWN",
+                "lt7:st": "22:36",
+                "lt7:et": "On time"
+              },
+              {
+                "lt7:locationName": "Irvine",
+                "lt7:crs": "IRV",
+                "lt7:st": "22:40",
+                "lt7:et": "On time"
+              },
+              {
+                "lt7:locationName": "Barassie",
+                "lt7:crs": "BSS",
+                "lt7:st": "22:44",
+                "lt7:et": "On time"
+              },
+              {
+                "lt7:locationName": "Troon",
+                "lt7:crs": "TRN",
+                "lt7:st": "22:47",
+                "lt7:et": "On time"
+              },
+              {
+                "lt7:locationName": "Prestwick Intl Airport",
+                "lt7:crs": "PRA",
+                "lt7:st": "22:51",
+                "lt7:et": "On time"
+              },
+              {
+                "lt7:locationName": "Prestwick Town",
+                "lt7:crs": "PTW",
+                "lt7:st": "22:53",
+                "lt7:et": "On time"
+              },
+              {
+                "lt7:locationName": "Newton-on-Ayr",
+                "lt7:crs": "NOA",
+                "lt7:st": "22:56",
+                "lt7:et": "On time"
+              },
+              {
+                "lt7:locationName": "Ayr",
+                "lt7:crs": "AYR",
+                "lt7:st": "23:01",
+                "lt7:et": "On time"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "lt4:std": "22:17",
+        "lt4:etd": "On time",
+        "lt4:operator": "ScotRail",
+        "lt4:operatorCode": "SR",
+        "lt4:serviceType": "train",
+        "lt4:serviceID": "Mf+kDlSzvx8R/3XKbPzuNQ==",
+        "lt5:rsid": "SR831200",
+        "lt5:origin": {
+          "lt4:location": {
+            "lt4:locationName": "Glasgow Central",
+            "lt4:crs": "GLC"
+          }
+        },
+        "lt5:destination": {
+          "lt4:location": {
+            "lt4:locationName": "East Kilbride",
+            "lt4:crs": "EKL"
+          }
+        },
+        "lt7:subsequentCallingPoints": {
+          "lt7:callingPointList": {
+            "lt7:callingPoint": [
+              {
+                "lt7:locationName": "Crossmyloof",
+                "lt7:crs": "CMY",
+                "lt7:st": "22:24",
+                "lt7:et": "On time"
+              },
+              {
+                "lt7:locationName": "Pollokshaws West",
+                "lt7:crs": "PWW",
+                "lt7:st": "22:26",
+                "lt7:et": "On time"
+              },
+              {
+                "lt7:locationName": "Thornliebank",
+                "lt7:crs": "THB",
+                "lt7:st": "22:29",
+                "lt7:et": "On time"
+              },
+              {
+                "lt7:locationName": "Giffnock",
+                "lt7:crs": "GFN",
+                "lt7:st": "22:32",
+                "lt7:et": "On time"
+              },
+              {
+                "lt7:locationName": "Clarkston",
+                "lt7:crs": "CKS",
+                "lt7:st": "22:36",
+                "lt7:et": "On time"
+              },
+              {
+                "lt7:locationName": "Busby",
+                "lt7:crs": "BUS",
+                "lt7:st": "22:40",
+                "lt7:et": "On time"
+              },
+              {
+                "lt7:locationName": "Thorntonhall",
+                "lt7:crs": "THT",
+                "lt7:st": "22:43",
+                "lt7:et": "On time"
+              },
+              {
+                "lt7:locationName": "Hairmyres",
+                "lt7:crs": "HMY",
+                "lt7:st": "22:46",
+                "lt7:et": "On time"
+              },
+              {
+                "lt7:locationName": "East Kilbride",
+                "lt7:crs": "EKL",
+                "lt7:st": "22:50",
+                "lt7:et": "On time"
+              }
+            ]
+          }
+        }
+      }
+    ]
+  }
 }

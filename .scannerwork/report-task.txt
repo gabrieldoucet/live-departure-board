@@ -1,0 +1,6 @@
+projectKey=live-departure-board
+serverUrl=http://localhost:9000
+serverVersion=10.6.0.92116
+dashboardUrl=http://localhost:9000/dashboard?id=live-departure-board
+ceTaskId=6eaa5825-01de-4e3c-8083-31e745ff4a12
+ceTaskUrl=http://localhost:9000/api/ce/task?id=6eaa5825-01de-4e3c-8083-31e745ff4a12
